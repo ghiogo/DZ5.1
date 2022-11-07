@@ -1,28 +1,43 @@
+
+
 public class Hero {
-    private int heroHealth;
-    private int heroDamage;
-    private String heroSuperPower;
+    private String name;
 
-    public Hero (int health, int damage , String superPower){
-        this.heroHealth=health;
-        this.heroDamage=damage;
-        this.heroSuperPower=superPower;
+    public String getName() {
+        return name;
     }
 
-    public int getHeroHealth() {
-        return heroHealth;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getHeroDamage() {
-        return heroDamage;
+    private int health;
+    private int damage;
+    private String superPower;
+
+    public Hero(String name, int health, int damage, String superPower) {
+        this.name=name;
+        this.health = health;
+        this.damage = damage;
+        this.superPower = superPower;
     }
 
-    public String getHeroSuperPower() {
-        return heroSuperPower;
+    public Hero(String name ,int health, int damage) {
+        this.name=name;
+        this.health = health;
+        this.damage = damage;
     }
 
-    public Hero (int health, int damage){
-        this.heroHealth=health;
-        this.heroDamage=damage;
+    public int getHealth() {
+        return health;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public String getSuperPower() {
+        return superPower;
     }
 }
+
